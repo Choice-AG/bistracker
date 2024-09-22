@@ -28,6 +28,10 @@
     background-color: #ABD473 !important;
 }
 
+.mage-color {
+    background-color: #3FC7EB !important;
+}
+
 input[type="checkbox"] {
     background-color: #333;
     border: 2px solid #51EA5A;
@@ -65,6 +69,11 @@ input[type="checkbox"]:checked {
 
 .deathknight-color {
     background-color: #C41F3B;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
 }
 
 .card-header img {

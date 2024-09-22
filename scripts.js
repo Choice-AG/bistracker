@@ -1,16 +1,22 @@
 const data = [
-    //Asterion
-    {loot: 0, dungeon: "Nieblas de Tirna Scithe", slot: "Head", name: "Gran yelmo de iracorteza", player: "Asterion", ID: 178703},
-    {loot: 0, dungeon: "Nieblas de Tirna Scithe", slot: "Neck", name: "Colgante hilasenderos", player: "Asterion", ID: 178707},
-    {loot: 0, dungeon: "Grim Batol", slot: "Cloak", name: "Mantón de trogg cosido", player: "Asterion", ID: 157597},
-    {loot: 0, dungeon: "El Rompealbas", slot: "Chest", name: "Caparazón de sacerdote oscuro", player: "Asterion", ID: 221139},
-    {loot: 0, dungeon: "Grim Batol", slot: "Wrist", name: "Brazales de alivio umbrío", player: "Asterion", ID: 56464},
-    {loot: 0, dungeon: "La Petrocámara", slot: "Belt", name: "Faja con fisura de cristal", player: "Asterion", ID: 221079},
-    {loot: 0, dungeon: "Asedio de Boralus", slot: "Boots", name: "Hundidores de grava", player: "Asterion", ID: 159428},
-    {loot: 0, dungeon: "Asedio de Boralus", slot: "Ring 1", name: "Sortija del pillastre errante", player: "Asterion", ID: 162541},
-    {loot: 0, dungeon: "Grim Batol", slot: "Ring 2", name: "Banda de Umbriss", player: "Asterion", ID: 56126},
-    {loot: 0, dungeon: "Ara-Kara", slot: "Trinket 1", name: "Saco eclosionador de Ara-Kara", player: "Asterion", ID: 219314},
-    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Asterion", ID: 219300},
+    //Mângo
+    {loot: 0, dungeon: "Nieblas de Tirna Scithe", slot: "Head", name: "Gran yelmo de iracorteza", player: "Mângo", ID: 178703},
+    {loot: 0, dungeon: "Nieblas de Tirna Scithe", slot: "Neck", name: "Colgante hilasenderos", player: "Mângo", ID: 178707},
+    {loot: 0, dungeon: "Grim Batol", slot: "Cloak", name: "Mantón de trogg cosido", player: "Mângo", ID: 157597},
+    {loot: 0, dungeon: "El Rompealbas", slot: "Chest", name: "Caparazón de sacerdote oscuro", player: "Mângo", ID: 221139},
+    {loot: 0, dungeon: "Grim Batol", slot: "Wrist", name: "Brazales de alivio umbrío", player: "Mângo", ID: 56464},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Belt", name: "Faja con fisura de cristal", player: "Mângo", ID: 221079},
+    {loot: 0, dungeon: "Asedio de Boralus", slot: "Boots", name: "Hundidores de grava", player: "Mângo", ID: 159428},
+    {loot: 0, dungeon: "Asedio de Boralus", slot: "Ring 1", name: "Sortija del pillastre errante", player: "Mângo", ID: 162541},
+    {loot: 0, dungeon: "Grim Batol", slot: "Ring 2", name: "Banda de Umbriss", player: "Mângo", ID: 56126},
+    {loot: 0, dungeon: "Ara-Kara", slot: "Trinket 1", name: "Saco eclosionador de Ara-Kara", player: "Mângo", ID: 219314},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mângo", ID: 219300},
 
     //Mizu
     {loot: 0, dungeon: "Nieblas de Tirna Scithe", slot: "Head", name: "Hood of the Hidden Path", player: "Mizu", ID: 178691},
@@ -24,6 +30,7 @@ const data = [
     {loot: 0, dungeon: "Estela Necrótica", slot: "Trinket 1", name: "Bottled Flayedwing Toxin", player: "Mizu", ID: 178742},
     {loot: 0, dungeon: "Ara-Kara", slot: "Trinket 2", name: "Ara-Kara Sacbrood", player: "Mizu", ID: 219314},
     {loot: 0, dungeon: "Ara-Kara", slot: "Weapon 1", name: "Harvester's Interdiction", player: "Mizu", ID: 221159},
+    {loot: 0, dungeon: "La Petrocámara", slot: "Trinket 2", name: "Fragmento de Skarmorak", player: "Mizu", ID: 219300},
 
     //Sheciro
     {loot: 0, dungeon: "Nieblas de Tirna Scithe", slot: "Neck", name: "Colgante hilasenderos", player: "Sheciro", ID: 178707},
@@ -73,7 +80,7 @@ function clearSections() {
 
 function loadUser(data) {
     const players = {
-        "Asterion": {color: "deathknight", img: "https://render.worldofwarcraft.com/eu/character/sanguino/14/169413646-avatar.jpg"},
+        "Mângo": {color: "mage", img: "https://render.worldofwarcraft.com/eu/character/sanguino/172/185198508-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg"},
         "Mizu": {color: "druid", img: "https://render.worldofwarcraft.com/eu/character/sanguino/97/182006625-avatar.jpg"},
         "Sheciro": {color: "priest", img: "https://render.worldofwarcraft.com/eu/character/sanguino/137/88757897-avatar.jpg"},
         "Ulv": {color: "hunter", img: "https://render.worldofwarcraft.com/eu/character/sanguino/22/175983894-avatar.jpg"}
@@ -141,6 +148,10 @@ function loadDungeon(data) {
     // Agrupar por dungeon y excluir ítems looteados
     data.forEach(item => {
         if (item.loot === 0) {
+            //item name already exists
+            if (dungeons[item.dungeon] && dungeons[item.dungeon].findIndex(i => i.name === item.name) !== -1) {
+                return;
+            }
             const dungeon = item.dungeon;
             if (!dungeons[dungeon]) {
                 dungeons[dungeon] = [];
@@ -176,7 +187,7 @@ function loadDungeon(data) {
             if (item.player.includes("Mizu")) link.style.color = "#FF7D0A";
             else if (item.player.includes("Ulv")) link.style.color = "#ABD473";
             else if (item.player.includes("Sheciro")) link.style.color = "#FFFFFF";
-            else if (item.player.includes("Asterion")) link.style.color = "#C41F3B";
+            else if (item.player.includes("Mângo")) link.style.color = "#3FC7EB";
 
             li.appendChild(link);
             ul.appendChild(li);
